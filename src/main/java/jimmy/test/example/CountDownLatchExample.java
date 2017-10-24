@@ -12,7 +12,8 @@ public class CountDownLatchExample {
 				{11, -43, -9, 20},
 				};
 
-		System.out.println(new CountDownLatchExample(numbersAry).sum());
+		org.apache.log4j.Logger.getLogger(CountDownLatchExample.class).error(
+				Integer.toString(new CountDownLatchExample(numbersAry).sum()), new RuntimeException("zzzzzzzzzz"));
 	}
 
 	// 以多執行緒 (thread pool) 執行非同步程序

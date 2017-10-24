@@ -1,6 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
+compileJava.options.encoding = 'UTF-8' //原始碼編譯時的編碼
+compileTestJava.options.encoding = 'UTF-8'
 mainClassName = 'hello.HelloWorld'
 
 sourceCompatibility = 1.8
@@ -29,7 +31,11 @@ def getGitHash = { ->
     }
     return stdout.toString().trim()
 }
+println 'git rev-parse --short HEAD'
 println getGitHash()
+test {
+	testLogging.showStandardStreams = true
+}
 
 /*
 sourceSets {
