@@ -19,3 +19,12 @@ jar {
     baseName = 'carboboop-test'
     version =  '0.1.0'
 }
+
+sourceSets {
+  main {
+    java {
+      srcDir 'src'
+      srcDir 'test'
+    }
+  }
+}
