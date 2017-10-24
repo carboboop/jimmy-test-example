@@ -4,6 +4,6 @@ import org.junit.Test;
 public class Test1 {
   @Test
   public void evaluatesExpression() {
-    System.out.println("xxxxxxxxxxx");
+    System.out.println("xxxxxxxxxxxyyyyyyyyy");
   }
 }
