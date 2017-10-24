@@ -2,7 +2,7 @@
 import org.junit.Test;
 
 public class Test1 {
-  private static final Logger org.slf4j.Logger = org.slf4j.LoggerFactory.getLogger(Test1.class);
+  private static final org.slf4j.Logger Logger = org.slf4j.LoggerFactory.getLogger(Test1.class);
   @Test
   public void evaluatesExpression() {
     Logger.log("xxxxxxxxxxxyyyyyyyyy");
