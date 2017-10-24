@@ -5,7 +5,7 @@ public class Test1 {
   private static final org.apache.log4j.Logger Logger = org.apache.log4j.Logger.getLogger(Test1.class);
   @Test
   public void evaluatesExpression() {
-    Logger.error("zzzzzzzz", "xxxxxxxxxxxyyyyyyyyy");
+    Logger.error("xxxxxxxxyyyyyyyy", new RuntimeException("zzzzzzzzzz"));
     org.junit.Assert.assertEquals("1","1");
   }
 }
