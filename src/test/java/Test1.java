@@ -2,9 +2,10 @@
 import org.junit.Test;
 
 public class Test1 {
+  private static final Logger org.slf4j.Logger = org.slf4j.LoggerFactory.getLogger(Test1.class);
   @Test
   public void evaluatesExpression() {
-    System.out.println("xxxxxxxxxxxyyyyyyyyy");
+    Logger.log("xxxxxxxxxxxyyyyyyyyy");
     org.junit.Assert.assertEquals("1","1");
   }
 }
