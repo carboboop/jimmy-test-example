@@ -5,7 +5,7 @@ public class Test1 {
   private static final org.slf4j.Logger Logger = org.slf4j.LoggerFactory.getLogger(Test1.class);
   @Test
   public void evaluatesExpression() {
-    Logger.info("xxxxxxxxxxxyyyyyyyyy");
+    Logger.error("zzzzzzzz", "xxxxxxxxxxxyyyyyyyyy");
     org.junit.Assert.assertEquals("1","1");
   }
 }
