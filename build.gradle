@@ -32,7 +32,7 @@ def getGitHash = { ->
     return stdout.toString().trim()
 }
 println 'git rev-parse --short HEAD'
-// println getGitHash() merge-test-8
+println getGitHash() // merge-test-9
 test {
 	testLogging.showStandardStreams = true
 }
